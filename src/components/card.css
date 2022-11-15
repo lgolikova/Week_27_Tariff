@@ -4,19 +4,97 @@
 
 .container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     border: 1px solid blue;
     height: 100vh;
     align-items: center;
-    background-color: whitesmoke;
+    background-color: #fafafa;
 }
 
 .card-container {
-    border: 1px solid red;
+    border: 1px solid white;
     width: 180px;
 }
 
 .first {
-    background-color: blueviolet;
+    background-color: #229cab;
 }
+
+.first-price {
+    background-color: #2cc1d5;
+}
+
+.second {
+    background-color: #1f8972;
+}
+
+.second-price {
+    background-color: #27ac8d;
+}
+
+.third {
+    background-color: #c5544e;
+}
+
+.third-price {
+    background-color: #f46a5f;
+}
+
+.fourth {
+    background-color: #282f37;
+}
+
+.fourth-price {
+    background-color: #333a44;
+}
+
+.name {
+    height: 60px;
+    color: #e7fdff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.name, .pricecontainer, .speed, .volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.price-innercontainer {
+    display: flex;
+    flex-direction: row;
+    color: #e7fdff;
+}
+
+.pricecontainer {
+    height: 120px;
+}
+
+.price {
+    font-size: 40px;
+}
+
+.speed {
+    background-color: #f8f8f8;
+    height: 50px;
+    color: #5f5f5f;
+    font-size: 14px;
+}
+
+.volume {
+    background-color: #eeeeee;
+    text-align: center;
+    height: 70px;
+    color: #5f5f5f;
+    font-size: 14px;
+}
+
+.mounth {
+    align-self: flex-end;
+    font-size: 14px;
+}
+
+.rubles {
+    font-size: 12px;
+}
+
