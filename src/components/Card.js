@@ -1,4 +1,4 @@
-import "./card.css";
+import "./card.scss";
 
 function Card(props) {
     return (
@@ -15,8 +15,6 @@ function Card(props) {
             <div className="volume">Объем включенного трафика не ограничен</div>
         </div>
     );
-
-
 }
 
 export default Card;

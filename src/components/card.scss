@@ -2,49 +2,21 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
+@mixin flex {
     display: flex;
     justify-content: center;
-    height: 100vh;
     align-items: center;
+}
+
+.container {
+    height: 100vh;
     background-color: #fafafa;
+    @include flex;
 }
 
 .card-container {
     border: 1px solid white;
     width: 180px;
-}
-
-.first {
-    background-color: #229cab;
-}
-
-.first-price {
-    background-color: #2cc1d5;
-}
-
-.second {
-    background-color: #1f8972;
-}
-
-.second-price {
-    background-color: #27ac8d;
-}
-
-.third {
-    background-color: #c5544e;
-}
-
-.third-price {
-    background-color: #f46a5f;
-}
-
-.fourth {
-    background-color: #282f37;
-}
-
-.fourth-price {
-    background-color: #333a44;
 }
 
 .name {
@@ -53,10 +25,11 @@
     border-bottom: 1px solid rgb(255, 255, 255);
 }
 
-.name, .pricecontainer, .speed, .volume {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.name,
+.pricecontainer,
+.speed,
+.volume {
+    @include flex;
 }
 
 .price-innercontainer {
@@ -101,3 +74,34 @@
     transform: scale(1.1);
 }
 
+.first {
+    background-color: #229cab;
+}
+
+.first-price {
+    background-color: #2cc1d5;
+}
+
+.second {
+    background-color: #1f8972;
+}
+
+.second-price {
+    background-color: #27ac8d;
+}
+
+.third {
+    background-color: #c5544e;
+}
+
+.third-price {
+    background-color: #f46a5f;
+}
+
+.fourth {
+    background-color: #282f37;
+}
+
+.fourth-price {
+    background-color: #333a44;
+}
