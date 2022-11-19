@@ -2,7 +2,7 @@ import "./card.css";
 
 function Card(props) {
     return (
-        <div className="card-container">
+        <div className={`card-container ${props.cardnumber}`}>
             <div className={`name ${props.stylename}`}>Безлимитный {props.name}</div>
             <div className={`pricecontainer ${props.styleprice}`}>
                 <div className="price-innercontainer">
@@ -15,6 +15,8 @@ function Card(props) {
             <div className="volume">Объем включенного трафика не ограничен</div>
         </div>
     );
+
+
 }
 
 export default Card;

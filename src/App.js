@@ -4,9 +4,10 @@ import Card from './components/Card';
 
 
 function App() {
+
   return (
     <div className='container'>
-      {data.map(item => <Card stylename={item.stylename} styleprice={item.styleprice} name={item.name} price={item.price} speed={item.speed}/>
+      {data.map(item => <Card stylename={item.stylename} styleprice={item.styleprice} name={item.name} price={item.price} speed={item.speed} cardnumber={item.cardnumber}/>
         )}
     </div>
   );

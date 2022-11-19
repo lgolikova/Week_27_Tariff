@@ -5,7 +5,6 @@
 .container {
     display: flex;
     justify-content: center;
-    border: 1px solid blue;
     height: 100vh;
     align-items: center;
     background-color: #fafafa;
@@ -51,7 +50,7 @@
 .name {
     height: 60px;
     color: #e7fdff;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .name, .pricecontainer, .speed, .volume {
@@ -96,5 +95,9 @@
 
 .rubles {
     font-size: 12px;
+}
+
+.card550 {
+    transform: scale(1.1);
 }
 
