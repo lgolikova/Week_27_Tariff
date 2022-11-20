@@ -6,7 +6,6 @@ export const data = [
         styleprice: "first-price",
         price: 300,
         speed: 10,
-        cardnumber: "card300",
     },
     {
         id: 2,
@@ -15,7 +14,6 @@ export const data = [
         styleprice: "second-price",
         price: 450,
         speed: 50,
-        cardnumber: "card450",
     },
     {
         id: 3,
@@ -24,7 +22,7 @@ export const data = [
         styleprice: "third-price",
         price: 550,
         speed: 100,
-        cardnumber: "card550",
+        isSelected: true,
     },
     {
         id: 4,
@@ -33,6 +31,5 @@ export const data = [
         styleprice: "fourth-price",
         price: 1000,
         speed: 200,
-        cardnumber: "card1000",
     }
 ]

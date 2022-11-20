@@ -70,10 +70,6 @@
     font-size: 12px;
 }
 
-.card550 {
-    transform: scale(1.1);
-}
-
 .first {
     background-color: #229cab;
 }
@@ -104,4 +100,8 @@
 
 .fourth-price {
     background-color: #333a44;
+}
+
+.selected {
+    transform: scale(1.1);
 }

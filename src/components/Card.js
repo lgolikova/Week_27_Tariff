@@ -2,9 +2,9 @@ import "./card.scss";
 
 function Card(props) {
     return (
-        <div className={`card-container ${props.cardnumber}`}>
-            <div className={`name ${props.stylename}`}>Безлимитный {props.name}</div>
-            <div className={`pricecontainer ${props.styleprice}`}>
+        <div className={"card-container " +(props.isSelected ? "selected" : "")}>
+            <div className={"name " +props.stylename}>Безлимитный {props.name}</div>
+            <div className={"pricecontainer " +props.styleprice}>
                 <div className="price-innercontainer">
                     <div className="rubles">руб.</div>
                     <div className="price">{props.price}</div>
@@ -18,3 +18,5 @@ function Card(props) {
 }
 
 export default Card;
+
+
