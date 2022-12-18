@@ -1,8 +1,9 @@
 import "./card.scss";
 
 function Card(props) {
+
     return (
-        <div className={"card-container " +(props.isSelected ? "selected" : "")}>
+        <div onClick={props.onClick} className={"card-container " +(props.selected ? "selected" : "")}>
             <div className={"name " +props.stylename}>Безлимитный {props.name}</div>
             <div className={"pricecontainer " +props.styleprice}>
                 <div className="price-innercontainer">
